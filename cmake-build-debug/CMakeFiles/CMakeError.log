@@ -1,0 +1,2128 @@
+Performing C++ SOURCE FILE Test THREAD_SANITIZER_AVAILABLE failed with the following compile output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_a0211 && [1/2] Building CXX object CMakeFiles/cmTC_a0211.dir/src.cxx.obj
+[2/2] Linking CXX executable cmTC_a0211.exe
+FAILED: cmTC_a0211.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE -fsanitize=thread  CMakeFiles/cmTC_a0211.dir/src.cxx.obj -o cmTC_a0211.exe -Wl,--out-implib,libcmTC_a0211.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:\Program Files\JetBrains\CLion 2021.1.1\bin\mingw\bin/ld.exe: cannot find -ltsan
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test ADDRESS_SANITIZER_AVAILABLE failed with the following compile output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_eaf89 && [1/2] Building CXX object CMakeFiles/cmTC_eaf89.dir/src.cxx.obj
+[2/2] Linking CXX executable cmTC_eaf89.exe
+FAILED: cmTC_eaf89.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE -fsanitize=address  CMakeFiles/cmTC_eaf89.dir/src.cxx.obj -o cmTC_eaf89.exe -Wl,--out-implib,libcmTC_eaf89.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:\Program Files\JetBrains\CLion 2021.1.1\bin\mingw\bin/ld.exe: cannot find -lasan
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test ALL_SANITIZERS_AVAILABLE failed with the following compile output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_86a46 && [1/2] Building CXX object CMakeFiles/cmTC_86a46.dir/src.cxx.obj
+[2/2] Linking CXX executable cmTC_86a46.exe
+FAILED: cmTC_86a46.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE -fsanitize=leak -fsanitize=undefined  CMakeFiles/cmTC_86a46.dir/src.cxx.obj -o cmTC_86a46.exe -Wl,--out-implib,libcmTC_86a46.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:\Program Files\JetBrains\CLion 2021.1.1\bin\mingw\bin/ld.exe: cannot find -lubsan
+C:\Program Files\JetBrains\CLion 2021.1.1\bin\mingw\bin/ld.exe: cannot find -llsan
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+int main() { return 0; }
+Determining if the include file sys/sdt.h exists failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_8ac89 && [1/2] Building C object CMakeFiles/cmTC_8ac89.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_8ac89.dir/CheckIncludeFile.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -Wall -Wno-implicit-fallthrough  -std=c99 -o CMakeFiles/cmTC_8ac89.dir/CheckIncludeFile.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/sdt.h: No such file or directory
+    1 | #include <sys/sdt.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test HAVE_ATTRIBUTE_VISIBILITY_HIDDEN failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_9b7cb && [1/2] Building C object CMakeFiles/cmTC_9b7cb.dir/src.c.obj
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:5:5: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+    5 |     }
+      |     ^
+[2/2] Linking C executable cmTC_9b7cb.exe
+
+
+Source file was:
+#define Z_INTERNAL __attribute__((visibility ("hidden")))
+    int Z_INTERNAL foo;
+    int main() {
+        return 0;
+    }
+Performing C SOURCE FILE Test HAVE_ATTRIBUTE_VISIBILITY_INTERNAL failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_dda88 && [1/2] Building C object CMakeFiles/cmTC_dda88.dir/src.c.obj
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:5:5: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+    5 |     }
+      |     ^
+[2/2] Linking C executable cmTC_dda88.exe
+
+
+Source file was:
+#define Z_INTERNAL __attribute__((visibility ("internal")))
+    int Z_INTERNAL foo;
+    int main() {
+        return 0;
+    }
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/filio.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_c3196 && [1/2] Building C object CMakeFiles/cmTC_c3196.dir/HAVE_SYS_FILIO_H.c.obj
+FAILED: CMakeFiles/cmTC_c3196.dir/HAVE_SYS_FILIO_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_c3196.dir/HAVE_SYS_FILIO_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FILIO_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FILIO_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FILIO_H.c:7:10: fatal error: sys/filio.h: No such file or directory
+    7 | #include <sys/filio.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/filio.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/ioctl.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_2ad94 && [1/2] Building C object CMakeFiles/cmTC_2ad94.dir/HAVE_SYS_IOCTL_H.c.obj
+FAILED: CMakeFiles/cmTC_2ad94.dir/HAVE_SYS_IOCTL_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_2ad94.dir/HAVE_SYS_IOCTL_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_IOCTL_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_IOCTL_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_IOCTL_H.c:7:10: fatal error: sys/ioctl.h: No such file or directory
+    7 | #include <sys/ioctl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/ioctl.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/resource.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_b3559 && [1/2] Building C object CMakeFiles/cmTC_b3559.dir/HAVE_SYS_RESOURCE_H.c.obj
+FAILED: CMakeFiles/cmTC_b3559.dir/HAVE_SYS_RESOURCE_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_b3559.dir/HAVE_SYS_RESOURCE_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_RESOURCE_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_RESOURCE_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_RESOURCE_H.c:7:10: fatal error: sys/resource.h: No such file or directory
+    7 | #include <sys/resource.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/resource.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/uio.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_8595c && [1/2] Building C object CMakeFiles/cmTC_8595c.dir/HAVE_SYS_UIO_H.c.obj
+FAILED: CMakeFiles/cmTC_8595c.dir/HAVE_SYS_UIO_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_8595c.dir/HAVE_SYS_UIO_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UIO_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UIO_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UIO_H.c:9:10: fatal error: sys/uio.h: No such file or directory
+    9 | #include <sys/uio.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/un.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_e49f3 && [1/2] Building C object CMakeFiles/cmTC_e49f3.dir/HAVE_SYS_UN_H.c.obj
+FAILED: CMakeFiles/cmTC_e49f3.dir/HAVE_SYS_UN_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_e49f3.dir/HAVE_SYS_UN_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UN_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UN_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UN_H.c:9:10: fatal error: sys/un.h: No such file or directory
+    9 | #include <sys/un.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/un.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;sys/xattr.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_59ce5 && [1/2] Building C object CMakeFiles/cmTC_59ce5.dir/HAVE_SYS_XATTR_H.c.obj
+FAILED: CMakeFiles/cmTC_59ce5.dir/HAVE_SYS_XATTR_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_59ce5.dir/HAVE_SYS_XATTR_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_XATTR_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_XATTR_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_XATTR_H.c:10:10: fatal error: sys/xattr.h: No such file or directory
+   10 | #include <sys/xattr.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <sys/xattr.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;arpa/tftp.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_a5ed3 && [1/2] Building C object CMakeFiles/cmTC_a5ed3.dir/HAVE_ARPA_TFTP_H.c.obj
+FAILED: CMakeFiles/cmTC_a5ed3.dir/HAVE_ARPA_TFTP_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_a5ed3.dir/HAVE_ARPA_TFTP_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_ARPA_TFTP_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_ARPA_TFTP_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_ARPA_TFTP_H.c:10:10: fatal error: arpa/tftp.h: No such file or directory
+   10 | #include <arpa/tftp.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <arpa/tftp.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;idn2.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_bb654 && [1/2] Building C object CMakeFiles/cmTC_bb654.dir/HAVE_IDN2_H.c.obj
+FAILED: CMakeFiles/cmTC_bb654.dir/HAVE_IDN2_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_bb654.dir/HAVE_IDN2_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c:13:10: fatal error: idn2.h: No such file or directory
+   13 | #include <idn2.h>
+      |          ^~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;ifaddrs.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_32c23 && [1/2] Building C object CMakeFiles/cmTC_32c23.dir/HAVE_IFADDRS_H.c.obj
+FAILED: CMakeFiles/cmTC_32c23.dir/HAVE_IFADDRS_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_32c23.dir/HAVE_IFADDRS_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IFADDRS_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IFADDRS_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IFADDRS_H.c:13:10: fatal error: ifaddrs.h: No such file or directory
+   13 | #include <ifaddrs.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;krb.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_aa05b && [1/2] Building C object CMakeFiles/cmTC_aa05b.dir/HAVE_KRB_H.c.obj
+FAILED: CMakeFiles/cmTC_aa05b.dir/HAVE_KRB_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_aa05b.dir/HAVE_KRB_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c:14:10: fatal error: krb.h: No such file or directory
+   14 | #include <krb.h>
+      |          ^~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <krb.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;netinet/tcp.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_d3494 && [1/2] Building C object CMakeFiles/cmTC_d3494.dir/HAVE_NETINET_TCP_H.c.obj
+FAILED: CMakeFiles/cmTC_d3494.dir/HAVE_NETINET_TCP_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_d3494.dir/HAVE_NETINET_TCP_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_NETINET_TCP_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_NETINET_TCP_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_NETINET_TCP_H.c:16:10: fatal error: netinet/tcp.h: No such file or directory
+   16 | #include <netinet/tcp.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <netinet/tcp.h>
+
+
+int main(void){return 0;}
+
+Determining if the include file linux/tcp.h exists failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_986b8 && [1/2] Building C object CMakeFiles/cmTC_986b8.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_986b8.dir/CheckIncludeFile.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_986b8.dir/CheckIncludeFile.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: linux/tcp.h: No such file or directory
+    1 | #include <linux/tcp.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;pem.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_4b081 && [1/2] Building C object CMakeFiles/cmTC_4b081.dir/HAVE_PEM_H.c.obj
+FAILED: CMakeFiles/cmTC_4b081.dir/HAVE_PEM_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_4b081.dir/HAVE_PEM_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c:16:10: fatal error: pem.h: No such file or directory
+   16 | #include <pem.h>
+      |          ^~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <pem.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;poll.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_f88ab && [1/2] Building C object CMakeFiles/cmTC_f88ab.dir/HAVE_POLL_H.c.obj
+FAILED: CMakeFiles/cmTC_f88ab.dir/HAVE_POLL_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_f88ab.dir/HAVE_POLL_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_POLL_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_POLL_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_POLL_H.c:16:10: fatal error: poll.h: No such file or directory
+   16 | #include <poll.h>
+      |          ^~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <poll.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;ssl.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_13f42 && [1/2] Building C object CMakeFiles/cmTC_13f42.dir/HAVE_SSL_H.c.obj
+FAILED: CMakeFiles/cmTC_13f42.dir/HAVE_SSL_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_13f42.dir/HAVE_SSL_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c:18:10: fatal error: ssl.h: No such file or directory
+   18 | #include <ssl.h>
+      |          ^~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <ssl.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h;stdio.h;stdlib.h;string.h;stropts.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_437bd && [1/2] Building C object CMakeFiles/cmTC_437bd.dir/HAVE_STROPTS_H.c.obj
+FAILED: CMakeFiles/cmTC_437bd.dir/HAVE_STROPTS_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_437bd.dir/HAVE_STROPTS_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c:22:10: fatal error: stropts.h: No such file or directory
+   22 | #include <stropts.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stropts.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h;stdio.h;stdlib.h;string.h;time.h;process.h;stddef.h;malloc.h;memory.h;sys/utsname.h exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_f8dc9 && [1/2] Building C object CMakeFiles/cmTC_f8dc9.dir/HAVE_SYS_UTSNAME_H.c.obj
+FAILED: CMakeFiles/cmTC_f8dc9.dir/HAVE_SYS_UTSNAME_H.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_f8dc9.dir/HAVE_SYS_UTSNAME_H.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTSNAME_H.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTSNAME_H.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTSNAME_H.c:27:10: fatal error: sys/utsname.h: No such file or directory
+   27 | #include <sys/utsname.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+#include <sys/utsname.h>
+
+
+int main(void){return 0;}
+
+Determining if the strncmpi exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_4f960 && [1/2] Building C object CMakeFiles/cmTC_4f960.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_4f960.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_4f960.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'strncmpi' undeclared (first use in this function); did you mean 'strcmpi'?
+   32 |   return ((int*)(&strncmpi))[argc];
+      |                   ^~~~~~~~
+      |                   strcmpi
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmpi
+  return ((int*)(&strncmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the alarm exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_4e5ed && [1/2] Building C object CMakeFiles/cmTC_4e5ed.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_4e5ed.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_4e5ed.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'alarm' undeclared (first use in this function)
+   32 |   return ((int*)(&alarm))[argc];
+      |                   ^~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alarm
+  return ((int*)(&alarm))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getppid exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_6b762 && [1/2] Building C object CMakeFiles/cmTC_6b762.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_6b762.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_6b762.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'getppid' undeclared (first use in this function); did you mean 'getpid'?
+   32 |   return ((int*)(&getppid))[argc];
+      |                   ^~~~~~~
+      |                   getpid
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getppid
+  return ((int*)(&getppid))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the utimes exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_2e1a3 && [1/2] Building C object CMakeFiles/cmTC_2e1a3.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_2e1a3.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_2e1a3.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'utimes' undeclared (first use in this function); did you mean 'utime'?
+   32 |   return ((int*)(&utimes))[argc];
+      |                   ^~~~~~
+      |                   utime
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef utimes
+  return ((int*)(&utimes))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getpwuid_r exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_b6e61 && [1/2] Building C object CMakeFiles/cmTC_b6e61.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_b6e61.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_b6e61.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'getpwuid_r' undeclared (first use in this function); did you mean 'getpid'?
+   32 |   return ((int*)(&getpwuid_r))[argc];
+      |                   ^~~~~~~~~~
+      |                   getpid
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpwuid_r
+  return ((int*)(&getpwuid_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the usleep exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_e01f0 && [1/2] Building C object CMakeFiles/cmTC_e01f0.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_e01f0.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_e01f0.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'usleep' undeclared (first use in this function); did you mean '_sleep'?
+   32 |   return ((int*)(&usleep))[argc];
+      |                   ^~~~~~
+      |                   _sleep
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef usleep
+  return ((int*)(&usleep))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror_r exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_7bffe && [1/2] Building C object CMakeFiles/cmTC_7bffe.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_7bffe.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_7bffe.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'strerror_r' undeclared (first use in this function); did you mean 'strerror_s'?
+   32 |   return ((int*)(&strerror_r))[argc];
+      |                   ^~~~~~~~~~
+      |                   strerror_s
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror_r
+  return ((int*)(&strerror_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the siginterrupt exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_f8d04 && [1/2] Building C object CMakeFiles/cmTC_f8d04.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_f8d04.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_f8d04.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'siginterrupt' undeclared (first use in this function)
+   32 |   return ((int*)(&siginterrupt))[argc];
+      |                   ^~~~~~~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef siginterrupt
+  return ((int*)(&siginterrupt))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the pipe exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_53560 && [1/2] Building C object CMakeFiles/cmTC_53560.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_53560.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_53560.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'pipe' undeclared (first use in this function); did you mean '_pipe'?
+   32 |   return ((int*)(&pipe))[argc];
+      |                   ^~~~
+      |                   _pipe
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pipe
+  return ((int*)(&pipe))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the ftruncate exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_f09f9 && [1/2] Building C object CMakeFiles/cmTC_f09f9.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_f09f9.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_f09f9.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'ftruncate' undeclared (first use in this function); did you mean 'strncat'?
+   32 |   return ((int*)(&ftruncate))[argc];
+      |                   ^~~~~~~~~
+      |                   strncat
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ftruncate
+  return ((int*)(&ftruncate))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the if_nametoindex exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_2f6dc && [1/2] Building C object CMakeFiles/cmTC_2f6dc.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_2f6dc.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_2f6dc.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'if_nametoindex' undeclared (first use in this function)
+   32 |   return ((int*)(&if_nametoindex))[argc];
+      |                   ^~~~~~~~~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef if_nametoindex
+  return ((int*)(&if_nametoindex))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getrlimit exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_71db8 && [1/2] Building C object CMakeFiles/cmTC_71db8.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_71db8.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_71db8.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'getrlimit' undeclared (first use in this function)
+   32 |   return ((int*)(&getrlimit))[argc];
+      |                   ^~~~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrlimit
+  return ((int*)(&getrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setrlimit exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_8fe87 && [1/2] Building C object CMakeFiles/cmTC_8fe87.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_8fe87.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_8fe87.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'setrlimit' undeclared (first use in this function)
+   32 |   return ((int*)(&setrlimit))[argc];
+      |                   ^~~~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setrlimit
+  return ((int*)(&setrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fcntl exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_1ecfb && [1/2] Building C object CMakeFiles/cmTC_1ecfb.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_1ecfb.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_1ecfb.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'fcntl' undeclared (first use in this function)
+   32 |   return ((int*)(&fcntl))[argc];
+      |                   ^~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fcntl
+  return ((int*)(&fcntl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the ioctl exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_60a7e && [1/2] Building C object CMakeFiles/cmTC_60a7e.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_60a7e.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_60a7e.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'ioctl' undeclared (first use in this function)
+   32 |   return ((int*)(&ioctl))[argc];
+      |                   ^~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ioctl
+  return ((int*)(&ioctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function mach_absolute_time exists failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_bf013 && [1/2] Building C object CMakeFiles/cmTC_bf013.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_bf013.exe
+FAILED: cmTC_bf013.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DCHECK_FUNCTION_EXISTS=mach_absolute_time  CMakeFiles/cmTC_bf013.dir/CheckFunctionExists.c.obj -o cmTC_bf013.exe -Wl,--out-implib,libcmTC_bf013.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:\Program Files\JetBrains\CLion 2021.1.1\bin\mingw\bin/ld.exe: CMakeFiles/cmTC_bf013.dir/CheckFunctionExists.c.obj:CheckFunctionExists.c:(.text+0x15): undefined reference to `mach_absolute_time'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the fsetxattr exist failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_213e5 && [1/2] Building C object CMakeFiles/cmTC_213e5.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_213e5.dir/CheckSymbolExists.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_213e5.dir/CheckSymbolExists.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+In file included from C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'fsetxattr' undeclared (first use in this function)
+   32 |   return ((int*)(&fsetxattr))[argc];
+      |                   ^~~~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fsetxattr
+  return ((int*)(&fsetxattr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining size of sa_family_t failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_d7144 && [1/2] Building C object CMakeFiles/cmTC_d7144.dir/SIZEOF_SA_FAMILY_T.c.obj
+FAILED: CMakeFiles/cmTC_d7144.dir/SIZEOF_SA_FAMILY_T.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_d7144.dir/SIZEOF_SA_FAMILY_T.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_SA_FAMILY_T.c"
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_SA_FAMILY_T.c:3:10: fatal error: sys/socket.h: No such file or directory
+    3 | #include "sys/socket.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_SA_FAMILY_T.c:
+#include <sys/types.h>
+#include <stddef.h>
+#include "sys/socket.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(sa_family_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of ADDRESS_FAMILY failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_14f72 && [1/2] Building C object CMakeFiles/cmTC_14f72.dir/SIZEOF_ADDRESS_FAMILY.c.obj
+FAILED: CMakeFiles/cmTC_14f72.dir/SIZEOF_ADDRESS_FAMILY.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_14f72.dir/SIZEOF_ADDRESS_FAMILY.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c"
+In file included from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c:3:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2def.h:31:9: error: unknown type name 'ULONG'
+   31 |         ULONG   Zone : 28;
+      |         ^~~~~
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2def.h:32:9: error: unknown type name 'ULONG'
+   32 |         ULONG   Level : 4;
+      |         ^~~~~
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/ws2def.h:34:5: error: unknown type name 'ULONG'
+   34 |     ULONG Value;
+      |     ^~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c:27:22: error: 'ADDRESS_FAMILY' undeclared here (not in a function)
+   27 | #define SIZE (sizeof(ADDRESS_FAMILY))
+      |                      ^~~~~~~~~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c:29:12: note: in expansion of macro 'SIZE'
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+ninja: build stopped: subcommand failed.
+
+
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c:
+#include <sys/types.h>
+#include <stddef.h>
+#include "ws2def.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(ADDRESS_FAMILY))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing Curl Test HAVE_FCNTL_O_NONBLOCK failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_7b9f2 && [1/2] Building C object CMakeFiles/cmTC_7b9f2.dir/CurlTests.c.obj
+FAILED: CMakeFiles/cmTC_7b9f2.dir/CurlTests.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_FCNTL_O_NONBLOCK  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_7b9f2.dir/CurlTests.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c"
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:64:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   64 | main ()
+      | ^~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:68:15: warning: implicit declaration of function 'fcntl' [-Wimplicit-function-declaration]
+   68 |       if(0 != fcntl(0, F_SETFL, flags | O_NONBLOCK))
+      |               ^~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:68:15: warning: nested extern declaration of 'fcntl' [-Wnested-externs]
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:68:24: error: 'F_SETFL' undeclared (first use in this function)
+   68 |       if(0 != fcntl(0, F_SETFL, flags | O_NONBLOCK))
+      |                        ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:68:24: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:68:41: error: 'O_NONBLOCK' undeclared (first use in this function)
+   68 |       if(0 != fcntl(0, F_SETFL, flags | O_NONBLOCK))
+      |                                         ^~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_244ed && [1/2] Building C object CMakeFiles/cmTC_244ed.dir/CurlTests.c.obj
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:261:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  261 | main ()
+      | ^~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:265:13: warning: implicit declaration of function 'IoctlSocket'; did you mean 'ioctlsocket'? [-Wimplicit-function-declaration]
+  265 |     if(0 != IoctlSocket(0, 0, 0))
+      |             ^~~~~~~~~~~
+      |             ioctlsocket
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:265:13: warning: nested extern declaration of 'IoctlSocket' [-Wnested-externs]
+[2/2] Linking C executable cmTC_244ed.exe
+FAILED: cmTC_244ed.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H  CMakeFiles/cmTC_244ed.dir/CurlTests.c.obj -o cmTC_244ed.exe -Wl,--out-implib,libcmTC_244ed.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:\Program Files\JetBrains\CLion 2021.1.1\bin\mingw\bin/ld.exe: CMakeFiles/cmTC_244ed.dir/CurlTests.c.obj:CurlTests.c:(.text+0x1e): undefined reference to `IoctlSocket'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_0abcf && [1/2] Building C object CMakeFiles/cmTC_0abcf.dir/CurlTests.c.obj
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:284:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  284 | main ()
+      | ^~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:289:17: warning: implicit declaration of function 'IoctlSocket'; did you mean 'ioctlsocket'? [-Wimplicit-function-declaration]
+  289 |         if(0 != IoctlSocket(0, FIONBIO, &flags))
+      |                 ^~~~~~~~~~~
+      |                 ioctlsocket
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:289:17: warning: nested extern declaration of 'IoctlSocket' [-Wnested-externs]
+[2/2] Linking C executable cmTC_0abcf.exe
+FAILED: cmTC_0abcf.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTLSOCKET_CAMEL_FIONBIO  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H  CMakeFiles/cmTC_0abcf.dir/CurlTests.c.obj -o cmTC_0abcf.exe -Wl,--out-implib,libcmTC_0abcf.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:\Program Files\JetBrains\CLion 2021.1.1\bin\mingw\bin/ld.exe: CMakeFiles/cmTC_0abcf.dir/CurlTests.c.obj:CurlTests.c:(.text+0x26): undefined reference to `IoctlSocket'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTL_FIONBIO failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_f24d8 && [1/2] Building C object CMakeFiles/cmTC_f24d8.dir/CurlTests.c.obj
+FAILED: CMakeFiles/cmTC_f24d8.dir/CurlTests.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTL_FIONBIO  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_f24d8.dir/CurlTests.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c"
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:339:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  339 | main ()
+      | ^~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:343:17: warning: implicit declaration of function 'ioctl' [-Wimplicit-function-declaration]
+  343 |         if(0 != ioctl(0, FIONBIO, &flags))
+      |                 ^~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:343:17: warning: nested extern declaration of 'ioctl' [-Wnested-externs]
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:343:26: error: 'FIONBIO' undeclared (first use in this function)
+  343 |         if(0 != ioctl(0, FIONBIO, &flags))
+      |                          ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:343:26: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTL_SIOCGIFADDR failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_1df39 && [1/2] Building C object CMakeFiles/cmTC_1df39.dir/CurlTests.c.obj
+FAILED: CMakeFiles/cmTC_1df39.dir/CurlTests.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTL_SIOCGIFADDR  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_1df39.dir/CurlTests.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c"
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:368:10: fatal error: net/if.h: No such file or directory
+  368 | #include <net/if.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_559f1 && [1/2] Building C object CMakeFiles/cmTC_559f1.dir/CurlTests.c.obj
+FAILED: CMakeFiles/cmTC_559f1.dir/CurlTests.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_SETSOCKOPT_SO_NONBLOCK  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_559f1.dir/CurlTests.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c"
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:402:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  402 | main ()
+      | ^~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:404:43: error: 'SO_NONBLOCK' undeclared (first use in this function)
+  404 |         if(0 != setsockopt(0, SOL_SOCKET, SO_NONBLOCK, 0, 0))
+      |                                           ^~~~~~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:404:43: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_054ca && [1/2] Building C object CMakeFiles/cmTC_054ca.dir/CurlTests.c.obj
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:517: warning: ISO C forbids an empty translation unit [-Wpedantic]
+[2/2] Linking C executable cmTC_054ca.exe
+FAILED: cmTC_054ca.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_SOCKADDR_IN6_SIN6_SCOPE_ID  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H  CMakeFiles/cmTC_054ca.dir/CurlTests.c.obj -o cmTC_054ca.exe -Wl,--out-implib,libcmTC_054ca.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:\Program Files\JetBrains\CLion 2021.1.1\bin\mingw\bin/ld.exe: C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text+0x46): undefined reference to `WinMain'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GLIBC_STRERROR_R failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_aa3ba && [1/2] Building C object CMakeFiles/cmTC_aa3ba.dir/CurlTests.c.obj
+FAILED: CMakeFiles/cmTC_aa3ba.dir/CurlTests.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_GLIBC_STRERROR_R  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_aa3ba.dir/CurlTests.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c"
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:414:6: warning: no previous prototype for 'check' [-Wmissing-prototypes]
+  414 | void check(char c) {}
+      |      ^~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'check':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:414:17: warning: unused parameter 'c' [-Wunused-parameter]
+  414 | void check(char c) {}
+      |            ~~~~~^
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: At top level:
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:417:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  417 | main () {
+      | ^~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:420:9: warning: implicit declaration of function 'strerror_r'; did you mean 'strerror_s'? [-Wimplicit-function-declaration]
+  420 |   check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
+      |         ^~~~~~~~~~
+      |         strerror_s
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:420:9: warning: nested extern declaration of 'strerror_r' [-Wnested-externs]
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:420:51: error: subscripted value is neither array nor pointer nor vector
+  420 |   check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
+      |                                                   ^
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_POSIX_STRERROR_R failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_a756b && [1/2] Building C object CMakeFiles/cmTC_a756b.dir/CurlTests.c.obj
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:429:6: warning: no previous prototype for 'check' [-Wmissing-prototypes]
+  429 | void check(float f) {}
+      |      ^~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'check':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:429:18: warning: unused parameter 'f' [-Wunused-parameter]
+  429 | void check(float f) {}
+      |            ~~~~~~^
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: At top level:
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:432:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  432 | main () {
+      | ^~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:435:9: warning: implicit declaration of function 'strerror_r'; did you mean 'strerror_s'? [-Wimplicit-function-declaration]
+  435 |   check(strerror_r(EACCES, buffer, sizeof(buffer)));
+      |         ^~~~~~~~~~
+      |         strerror_s
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:435:9: warning: nested extern declaration of 'strerror_r' [-Wnested-externs]
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:435:9: warning: conversion from 'int' to 'float' may change value [-Wconversion]
+  435 |   check(strerror_r(EACCES, buffer, sizeof(buffer)));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2/2] Linking C executable cmTC_a756b.exe
+FAILED: cmTC_a756b.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_POSIX_STRERROR_R  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H  CMakeFiles/cmTC_a756b.dir/CurlTests.c.obj -o cmTC_a756b.exe -Wl,--out-implib,libcmTC_a756b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:\Program Files\JetBrains\CLion 2021.1.1\bin\mingw\bin/ld.exe: CMakeFiles/cmTC_a756b.dir/CurlTests.c.obj:CurlTests.c:(.text+0x34): undefined reference to `strerror_r'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_BUILTIN_AVAILABLE failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_283e4 && [1/2] Building C object CMakeFiles/cmTC_283e4.dir/CurlTests.c.obj
+FAILED: CMakeFiles/cmTC_283e4.dir/CurlTests.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_BUILTIN_AVAILABLE  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_283e4.dir/CurlTests.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c"
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:466:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  466 | main() {
+      | ^~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:467:6: warning: implicit declaration of function '__builtin_available'; did you mean '__builtin_scalbl'? [-Wimplicit-function-declaration]
+  467 |   if(__builtin_available(macOS 10.12, *)) {}
+      |      ^~~~~~~~~~~~~~~~~~~
+      |      __builtin_scalbl
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:467:6: warning: nested extern declaration of '__builtin_available' [-Wnested-externs]
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:467:26: error: 'macOS' undeclared (first use in this function)
+  467 |   if(__builtin_available(macOS 10.12, *)) {}
+      |                          ^~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:467:26: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:467:31: error: expected ')' before numeric constant
+  467 |   if(__builtin_available(macOS 10.12, *)) {}
+      |                         ~     ^~~~~~
+      |                               )
+ninja: build stopped: subcommand failed.
+
+
+Performing C SOURCE FILE Test HAVE_MSG_NOSIGNAL failed with the following output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_825d6 && [1/2] Building C object CMakeFiles/cmTC_825d6.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_825d6.dir/src.c.obj 
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe -DHAVE_MSG_NOSIGNAL -I"C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/curl-src/include" -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles/cmTC_825d6.dir/src.c.obj -c "C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c"
+In file included from C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:16: error: 'MSG_NOSIGNAL' undeclared (first use in this function)
+    8 |     int flag = MSG_NOSIGNAL;
+      |                ^~~~~~~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:16: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#undef inline
+#include <winsock2.h>
+#include <windows.h>
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+  int main(void) {
+    int flag = MSG_NOSIGNAL;
+    (void)flag;
+    return 0;
+  }
+Performing C SOURCE FILE Test HAVE_POLL_FINE failed with the following compile output:
+Change Dir: C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2021.1.1/bin/ninja/win/ninja.exe cmTC_5d4bc && [1/2] Building C object CMakeFiles/cmTC_5d4bc.dir/src.c.obj
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:7:12: warning: "HAVE_POLL_H" is not defined, evaluates to 0 [-Wundef]
+    7 |     #elif  HAVE_POLL_H
+      |            ^~~~~~~~~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:13:17: warning: implicit declaration of function 'poll' [-Wimplicit-function-declaration]
+   13 |         if(0 != poll(0, 0, 10)) {
+      |                 ^~~~
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:13:17: warning: nested extern declaration of 'poll' [-Wnested-externs]
+C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:19:15: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+   19 |           int rc;
+      |               ^~
+[2/2] Linking C executable cmTC_5d4bc.exe
+FAILED: cmTC_5d4bc.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format  CMakeFiles/cmTC_5d4bc.dir/src.c.obj -o cmTC_5d4bc.exe -Wl,--out-implib,libcmTC_5d4bc.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:\Program Files\JetBrains\CLion 2021.1.1\bin\mingw\bin/ld.exe: CMakeFiles/cmTC_5d4bc.dir/src.c.obj:src.c:(.text+0x1e): undefined reference to `poll'
+C:\Program Files\JetBrains\CLion 2021.1.1\bin\mingw\bin/ld.exe: CMakeFiles/cmTC_5d4bc.dir/src.c.obj:src.c:(.text+0x4f): undefined reference to `poll'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+    #include <stdlib.h>
+    #include <sys/time.h>
+
+    #ifdef HAVE_SYS_POLL_H
+    #  include <sys/poll.h>
+    #elif  HAVE_POLL_H
+    #  include <poll.h>
+    #endif
+
+    int main(void)
+    {
+        if(0 != poll(0, 0, 10)) {
+          return 1; /* fail */
+        }
+        else {
+          /* detect the 10.12 poll() breakage */
+          struct timeval before, after;
+          int rc;
+          size_t us;
+
+          gettimeofday(&before, NULL);
+          rc = poll(NULL, 0, 500);
+          gettimeofday(&after, NULL);
+
+          us = (after.tv_sec - before.tv_sec) * 1000000 +
+            (after.tv_usec - before.tv_usec);
+
+          if(us < 400000) {
+            return 1;
+          }
+        }
+        return 0;
+    }

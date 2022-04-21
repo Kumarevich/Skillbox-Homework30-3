@@ -1,0 +1,21 @@
+# ninja log v5
+1	400	6721526856128050	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir	f6c4035f93da5ca
+1	400	6721526856128050	C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir	f6c4035f93da5ca
+401	4814	6721526900254783	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download	744793842a155e8a
+401	4814	6721526900254783	C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download	744793842a155e8a
+4815	5059	0	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update	9201cf52389ec5ea
+4815	5059	0	C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update	9201cf52389ec5ea
+5059	5156	6721526903683868	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch	e8041bcb8d1c5b06
+5059	5156	6721526903683868	C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch	e8041bcb8d1c5b06
+5156	5255	6721526904679285	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure	443802823c8e8418
+5156	5255	6721526904679285	C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure	443802823c8e8418
+5255	5355	6721526905679820	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build	aea531edc776635e
+5255	5355	6721526905679820	C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build	aea531edc776635e
+5355	5461	6721526906727881	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install	747dc3085d92ea19
+5355	5461	6721526906727881	C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install	747dc3085d92ea19
+5461	5569	6721526907815137	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test	93a2cd098918cfc8
+5461	5569	6721526907815137	C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test	93a2cd098918cfc8
+5569	5700	6721526909134081	CMakeFiles/cpr-populate-complete	9ded7bcd1e5689a1
+5569	5700	6721526909134081	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-done	9ded7bcd1e5689a1
+5569	5700	6721526909134081	C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/cpr-subbuild/CMakeFiles/cpr-populate-complete	9ded7bcd1e5689a1
+5569	5700	6721526909134081	C:/Users/Igor Makarevich/CLionProjects/Homework 30-3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-done	9ded7bcd1e5689a1
